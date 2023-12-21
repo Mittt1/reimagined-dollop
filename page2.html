@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Страница 2</title>
+    <title>Форма для ввода и обработки информации </title>
+   <script>
+       function processForm() {
+           var name = document.getElementById("name").value;
+           var email = document.getElementById("email").value;
+           var message = document.getElementById("message").value;
+
+           // Обработка информации
+           // Например, можно вывести введенные данные в консоль
+           console.log("Имя: " + name);
+           console.log("Email: " + email);
+           console.log("Сообщение: " + message);
+
+           // Очистка формы
+           document.getElementById("name").value = "";
+           document.getElementById("email").value = "";
+           document.getElementById("message").value = "";
+
+           // Дополнительная обработка информации
+           // Например, можно вывести сообщение на странице
+           document.getElementById("output").textContent = "Форма была успешно отправлена!";
+       }
+   </script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="style1.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<a href="jj.html"><img src="logo.png" width="50" height="50" alt="Логотип"></a>
+	<h1>Арифметика, или числительница.</h1>
+<h2>Word Документ</h2>
+   <a href="rr.docx">Word Документ</a>
+   <br>
+	<h1>Форма для ввода и обработки информации </h1>
+    <form>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+
+        <button type="button" onclick="processForm()">Отправить</button>
+    </form>
+
+    <p id="output"></p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> hello! </title>
+<title>Главная страница</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="style1.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+  <h1>Математические операции</h1>
+   <a href="page1.html"><img src="logo.png" width="200" height="222" alt="Логотип"></a>
+   <a href="page2.html"><img src="logo.png" width="200" height="222" alt="Логотип"></a>
+   <a href="page3.html"><img src="logo.png" width="200" height="222" alt="Логотип"></a>
+   <a href="frame.html"><img src="fr.jpg" width="200" height="222" alt="frame"></a>
+   <br>
+   <h2>Gif-ka</h2>
+   <img src="fig.gif" width="200" height="222" alt="Анимация" class="fff3">
+   <br>
+   <h2>Jpg Картинка</h2>
+   <a href="rr.jpg">Jpg Картинка</a>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img id="myImage" src="issak.png" width="200" height="150" alt="Изображение">
+
+    <!-- Создаем элемент для отображения текста -->
+    <div id="textContainer"></div>
+
+    <script>
+        // Получаем ссылку на элемент с изображением
+        const imageElement = document.getElementById("myImage");
+        // Создаем элемент для отображения текста
+        const textContainer = document.getElementById("textContainer");
+        // Добавляем текст в элемент для отображения
+        textContainer.innerHTML = "Исаак Ньютон - английский физик, математик, механик и астроном, один из создателей классической физики и математического анализа.";
+        // Устанавливаем стиль для элемента отображения текста
+        textContainer.style.display = "inline-block";
+        // Устанавливаем отступ слева от элемента с изображением
+        imageElement.style.marginRight = "10px";
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Сколько раз не говори, всё же математику учи </h3>
+    <ol id="myList">
+   </ol>
+   <script>
+    var myList = document.getElementById('myList');
+
+    for (var i = 1; i <= 5; i++) {
+        var listItem = document.createElement('li');
+        listItem.textContent = 'Учи ' + i + "!";
+        myList.appendChild(listItem);
+    }
+    </script>
+
+</body>
+</html>
